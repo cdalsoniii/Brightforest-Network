@@ -3,6 +3,6 @@ workflows:
     name: Build web
     scripts: 
         - flutter config --enable-web
-        - flutter build web --release
+        - flutter build web --no-sound-null-safety --release
         - cd build/web
         - 7z a -r ../web.zip ./*
