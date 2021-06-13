@@ -170,7 +170,7 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2020 | EXPLORE',
+                    'Copyright © 2020 | PathX AI',
                     style: TextStyle(
                       color: Colors.blueGrey[300],
                       fontSize: 14,

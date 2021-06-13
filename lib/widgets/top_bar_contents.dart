@@ -155,7 +155,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                         );
                       }
                     : null,
-                child: userEmail == null
+                child: uid == null
                     ? Text(
                         'Sign in',
                         style: TextStyle(
@@ -198,6 +198,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                                 : () async {
                                     setState(() {
                                       _isProcessing = true;
+                                      uid = null;
                                     });
                                     await signOut().then((result) {
                                       print(result);

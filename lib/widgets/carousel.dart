@@ -20,19 +20,20 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
   final List<String> images = [
     'assets/images/asia.jpg',
     'assets/images/africa.jpg',
-    'assets/images/europe.jpg',
-    'assets/images/south_america.jpg',
-    'assets/images/australia.jpg',
-    'assets/images/antarctica.jpg',
+    //'assets/images/europe.jpg',
+    //'assets/images/south_america.jpg',
+    //'assets/images/australia.jpg',
+    //'assets/images/antarctica.jpg',
   ];
 
   final List<String> places = [
+    'SKILL EXTRACTION',
     'ASIA',
-    'AFRICA',
-    'EUROPE',
-    'SOUTH AMERICA',
-    'AUSTRALIA',
-    'ANTARCTICA',
+    //'AFRICA',
+    //'EUROPE',
+    //'SOUTH AMERICA',
+    //'AUSTRALIA',
+    //'ANTARCTICA',
   ];
 
   List<Widget> generateImageTiles(screenSize) {
@@ -49,6 +50,8 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
         .toList();
   }
 
+  List<Widget> generateAppTiles = [];
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -57,14 +60,17 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     return Stack(
       children: [
         CarouselSlider(
+          
           items: imageSliders,
           options: CarouselOptions(
+              height: screenSize.height,
+              //width: screenSize.width,
               scrollPhysics: ResponsiveWidget.isSmallScreen(context)
                   ? PageScrollPhysics()
                   : NeverScrollableScrollPhysics(),
               enlargeCenterPage: true,
               aspectRatio: 18 / 8,
-              autoPlay: true,
+              autoPlay: false,
               onPageChanged: (index, reason) {
                 setState(() {
                   _current = index;
@@ -100,7 +106,8 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
                 child: Center(
                   heightFactor: 1,
                   child: Align(
-                    alignment: Alignment.bottomCenter,
+                    //alignment: Alignment.bottomCenter,
+                    alignment: Alignment.topCenter,
                     child: Padding(
                       padding: EdgeInsets.only(
                         left: screenSize.width / 8,

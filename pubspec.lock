@@ -43,6 +43,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  cloud_firestore:
+    dependency: "direct main"
+    description:
+      name: cloud_firestore
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
+  cloud_firestore_platform_interface:
+    dependency: transitive
+    description:
+      name: cloud_firestore_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0"
+  cloud_firestore_web:
+    dependency: transitive
+    description:
+      name: cloud_firestore_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   collection:
     dependency: transitive
     description:
@@ -57,6 +78,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  dio:
+    dependency: "direct main"
+    description:
+      name: dio
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0"
   easy_dynamic_theme:
     dependency: "direct main"
     description:
@@ -64,6 +92,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  easy_search:
+    dependency: "direct main"
+    description:
+      name: easy_search
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.6+1"
   fake_async:
     dependency: transitive
     description:
@@ -132,6 +167,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_slider_indicator:
+    dependency: transitive
+    description:
+      name: flutter_slider_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
+  flutter_stack_card:
+    dependency: "direct main"
+    description:
+      name: flutter_stack_card
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -163,6 +212,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.10.0"
+  http:
+    dependency: "direct main"
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.3"
   http_parser:
     dependency: transitive
     description:
@@ -226,6 +282,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  pedantic:
+    dependency: transitive
+    description:
+      name: pedantic
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.11.0"
   platform:
     dependency: transitive
     description:
@@ -254,6 +317,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.0"
+  remove_emoji:
+    dependency: transitive
+    description:
+      name: remove_emoji
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.6"
+  sentiment_dart:
+    dependency: "direct main"
+    description:
+      name: sentiment_dart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.4"
   shared_preferences:
     dependency: transitive
     description:
@@ -329,6 +406,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  swipable_stack:
+    dependency: "direct main"
+    description:
+      name: swipable_stack
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.0"
+  swipe_stack:
+    dependency: "direct main"
+    description:
+      name: swipe_stack
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  swipedetector:
+    dependency: "direct main"
+    description:
+      name: swipedetector
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   term_glyph:
     dependency: transitive
     description:
@@ -343,6 +441,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.19"
+  tiktoklikescroller:
+    dependency: "direct main"
+    description:
+      name: tiktoklikescroller
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.6"
   typed_data:
     dependency: transitive
     description:

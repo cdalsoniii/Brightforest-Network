@@ -10,6 +10,7 @@ import 'package:explore/widgets/floating_quick_access_bar.dart';
 import 'package:explore/widgets/responsive.dart';
 import 'package:explore/widgets/top_bar_contents.dart';
 import 'package:flutter/material.dart';
+import 'package:explore/components/fs_search/cloud_firestore_component.dart';
 
 class HomePage extends StatefulWidget {
   static const String route = '/';
@@ -91,6 +92,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Stack(
                 children: [
+                  /*
                   Container(
                     child: SizedBox(
                       height: screenSize.height * 0.45,
@@ -101,24 +103,32 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
+                  */
                   Column(
                     children: [
-                      FloatingQuickAccessBar(screenSize: screenSize),
+                      // FloatingQuickAccessBar(screenSize: screenSize),
+                      /*
                       Container(
                         child: Column(
                           children: [
+                            Text("Hello"),
                             FeaturedHeading(
                               screenSize: screenSize,
                             ),
                             FeaturedTiles(screenSize: screenSize)
                           ],
                         ),
+                        
                       ),
+                      */
                     ],
                   )
+                  
                 ],
               ),
-              DestinationHeading(screenSize: screenSize),
+              //DestinationHeading(screenSize: screenSize),
+              SizedBox(height: 70),
+              //CloudFirestoreSearch(),
               DestinationCarousel(),
               SizedBox(height: screenSize.height / 10),
               BottomBar(),
