@@ -3,7 +3,7 @@ workflows:
     name: Build web
     environment:
       vars:
-        PUBLIC_ENV_VAR: "1//0dR2OnbpfV3fMCgYIARAAGA0SNwF-L9IrY3ARADAkRwGHYG6EsQZ3nNxBHWwxXIiNBfdL3bPoBL2gtsjxKR5-TgL-A-je-zrygjI"
+        FIREBASE_TOKEN: Encrypted(Z0FBQUFBQmd4b2ZwU1Qwb1JKT0FVTnJjSjB6MHZfSzF5ZVZMZnh6TkE3NVpQM0pTNWlvRTVGdDE1Q01qN0VFVlNob2hqSGkyWmJNbjRkN290bXdTZ2dHYThZSGhFTV84MVA0R0tnNTNoYmtsLWtOLXJjbmJMdXJLQzZwQnpWT01hMHg1cHpLSnYwdUtYNkx3R1paU0ZLTDJRUWdwaldSODRfaUFfNEt3c2ZfckdvUHo0OUdXQkFvQzdBaXpJYVp2eVBkYkNQWV9CVnNyTVFPVWxONjQzRzJWYVRrZF9pa3UwZz09)
     scripts: 
         - echo "$FIREBASE_TOKEN"
         - flutter config --enable-web
