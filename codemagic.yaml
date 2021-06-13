@@ -1,6 +1,9 @@
 workflows:
   hello-world:
     name: Build web
+    environment:
+      vars:
+        PUBLIC_ENV_VAR: "1//0dR2OnbpfV3fMCgYIARAAGA0SNwF-L9IrY3ARADAkRwGHYG6EsQZ3nNxBHWwxXIiNBfdL3bPoBL2gtsjxKR5-TgL-A-je-zrygjI"
     scripts: 
         - echo "$FIREBASE_TOKEN"
         - flutter config --enable-web
