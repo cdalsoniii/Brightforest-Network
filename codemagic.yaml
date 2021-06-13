@@ -1,0 +1,8 @@
+workflows:
+  hello-world:
+    name: Build web
+    scripts: 
+        - flutter config --enable-web
+        - flutter build web --release
+        - cd build/web
+        - 7z a -r ../web.zip ./*
