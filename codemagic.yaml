@@ -1,5 +1,5 @@
 workflows:
-  hello-world:
+  flutter_web:
     name: Build web
     environment:
       vars:

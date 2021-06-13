@@ -27,7 +27,7 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
   ];
 
   final List<String> places = [
-    'SKILL EXTRACTION',
+    'SKILL EXTRACTION2',
     'ASIA',
     //'AFRICA',
     //'EUROPE',
