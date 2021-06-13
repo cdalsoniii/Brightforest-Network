@@ -2,6 +2,7 @@ workflows:
   hello-world:
     name: Build web
     scripts: 
+        - echo "$FIREBASE_TOKEN"
         - flutter config --enable-web
         - flutter build web --no-sound-null-safety --release
         - cd build/web
