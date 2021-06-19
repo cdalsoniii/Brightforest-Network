@@ -1,4 +1,4 @@
-package com.brightforest.explore.explore
+package com.brightforest.explore
 
 import io.flutter.embedding.android.FlutterActivity
 
