@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:easy_search/easy_search.dart';
+//import 'package:easy_search/easy_search.dart';
 import 'package:flutter/material.dart';
 import 'package:explore/services/repositories/cloud_functions.dart';
 //import 'package:meet_network_image/meet_network_image.dart';

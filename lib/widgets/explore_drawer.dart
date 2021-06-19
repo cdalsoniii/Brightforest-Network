@@ -1,6 +1,7 @@
 import 'package:explore/screens/home_page.dart';
 import 'package:explore/utils/authentication.dart';
 import 'package:flutter/material.dart';
+import 'package:explore/components/multi_search/general.dart';
 
 import 'auth_dialog.dart';
 
@@ -160,7 +161,16 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+ 
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) {
+                return GeneralApp();
+              }),
+            );
+          
+                },
                 child: Text(
                   'Contact Us',
                   style: TextStyle(color: Colors.white, fontSize: 22),

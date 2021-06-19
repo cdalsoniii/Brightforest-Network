@@ -7,7 +7,7 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.5.0"
+    version: "2.6.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -92,13 +92,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
-  easy_search:
-    dependency: "direct main"
-    description:
-      name: easy_search
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.6+1"
   fake_async:
     dependency: transitive
     description:
@@ -167,20 +160,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_slider_indicator:
-    dependency: transitive
-    description:
-      name: flutter_slider_indicator
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.1"
-  flutter_stack_card:
-    dependency: "direct main"
-    description:
-      name: flutter_stack_card
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -317,20 +296,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.0"
-  remove_emoji:
-    dependency: transitive
-    description:
-      name: remove_emoji
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.6"
-  sentiment_dart:
+  search_choices:
     dependency: "direct main"
     description:
-      name: sentiment_dart
+      name: search_choices
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.4"
+    version: "2.0.3"
   shared_preferences:
     dependency: transitive
     description:
@@ -384,7 +356,7 @@ packages:
       name: source_span
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.8.0"
+    version: "1.8.1"
   stack_trace:
     dependency: transitive
     description:
@@ -406,27 +378,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
-  swipable_stack:
-    dependency: "direct main"
-    description:
-      name: swipable_stack
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.5.0"
-  swipe_stack:
-    dependency: "direct main"
-    description:
-      name: swipe_stack
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
-  swipedetector:
-    dependency: "direct main"
-    description:
-      name: swipedetector
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.2.0"
   term_glyph:
     dependency: transitive
     description:
@@ -440,7 +391,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.19"
+    version: "0.3.0"
   tiktoklikescroller:
     dependency: "direct main"
     description:

@@ -132,7 +132,8 @@ class _CloudFirestoreSearchState extends State<CloudFirestoreSearch> {
             Container(
               color: Colors.deepPurple,
               child: Center(
-                child: EasySearchApp(),
+                //child: EasySearchApp(),
+                child: Text("Hi")
               ),
             ),
           ],

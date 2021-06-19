@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:explore/widgets/web_scrollbar.dart';
 import 'package:explore/widgets/bottom_bar.dart';
@@ -9,35 +11,36 @@ import 'package:explore/widgets/featured_tiles.dart';
 import 'package:explore/widgets/floating_quick_access_bar.dart';
 import 'package:explore/widgets/responsive.dart';
 import 'package:explore/widgets/top_bar_contents.dart';
-import 'package:flutter/material.dart';
-//import 'package:explore/components/fs_search/cloud_firestore_component.dart';
 
-class HomePage extends StatefulWidget {
-  static const String route = '/';
-  Widget focusWidget = Text("Test");
+class Todo {
+  final String title;
+  final String description;
 
-  @override
-  _HomePageState createState() => _HomePageState();
+  Todo(this.title, this.description);
 }
 
-class _HomePageState extends State<HomePage> {
-  late ScrollController _scrollController;
+void main() {
+  runApp(
+    MaterialApp(
+      title: 'Passing Data',
+      home: TodosScreen(test: "Test", mainApp: DestinationCarousel(),),
+    ),
+  );
+}
+
+class TodosScreen extends StatelessWidget {
+
+  static const String route = '/';
+  late ScrollController _scrollController = ScrollController();
   double _scrollPosition = 0;
   double _opacity = 0;
-  
+  String test = "Test";
+  Widget mainApp = DestinationCarousel();
 
-  _scrollListener() {
-    setState(() {
-      _scrollPosition = _scrollController.position.pixels;
-    });
-  }
-
-  @override
-  void initState() {
-    _scrollController = ScrollController();
-    _scrollController.addListener(_scrollListener);
-    super.initState();
-  }
+  TodosScreen({Key? key, 
+              required this.test,
+              required this.mainApp
+              }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +69,8 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
               title: Text(
-                'EXPLORE',
+                //'EXPLORE',
+                '${this.test}',
                 style: TextStyle(
                   color: Colors.blueGrey[100],
                   fontSize: 20,
@@ -129,14 +133,33 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               //DestinationHeading(screenSize: screenSize),
-              SizedBox(height: 70),
+              SizedBox(height: 50),
               //CloudFirestoreSearch(),
-              DestinationCarousel(),
-              SizedBox(height: screenSize.height / 10),
-              BottomBar(),
+              //DestinationCarousel(),
+              mainApp
+              //SizedBox(height: screenSize.height / 10),
+              //BottomBar(),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class DetailScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final todo = ModalRoute.of(context)!.settings.arguments as Todo;
+
+    // Use the Todo to create the UI.
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(todo.title),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Text(todo.description),
       ),
     );
   }
