@@ -9,6 +9,7 @@ import 'screens/general_page.dart';
 import 'package:explore/components/multi_search/general.dart';
 import 'package:explore/widgets/destination_heading.dart';
 
+
 void main() async {
    //await Firebase.initializeApp();
   runApp(
