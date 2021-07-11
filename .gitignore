@@ -31,11 +31,13 @@
 .pub/
 /build/
 
+# Fastlane
+/fastlane/*
+
 # Google Cloud Functions
 /functions/*
 
 # Projects
-
 /ios/
 /android/
 

@@ -22,8 +22,6 @@ Future  getFruit() async {
 
 
 Future<void> getWitAI() async {
-  // Wit.AI
-//final wit = Wit(accessToken: 'VYZDBKVHWOPHWE5QB3XOG6NBSUF4GBJF');
 
 //dynamic response = await wit.message("Hello");
 print("response: ");
