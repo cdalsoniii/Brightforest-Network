@@ -30,12 +30,21 @@
 .pub-cache/
 .pub/
 /build/
+
+# Google Cloud Functions
 /functions/*
-/web/index.html
+
+# Projects
+
+/ios/
+/android/
+
+# API Keys
 /ios/GoogleService-Info.plist
 
 # Web related
 lib/generated_plugin_registrant.dart
+/web/index.html
 
 # Symbolication related
 app.*.symbols
