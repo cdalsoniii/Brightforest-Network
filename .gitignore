@@ -40,6 +40,7 @@
 # Projects
 /ios/
 /android/
+/truffle-proj/
 
 # API Keys
 /ios/GoogleService-Info.plist
