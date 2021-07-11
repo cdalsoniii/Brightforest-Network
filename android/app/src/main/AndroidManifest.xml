@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.brightforest.explore.explore">
+    package="com.brightforest.explore">
    <application
         android:label="explore"
         android:icon="@mipmap/ic_launcher">
