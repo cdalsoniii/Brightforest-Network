@@ -3,8 +3,15 @@ info:
   title: tas
   version: '1.0'
   summary: sadfads
+  contact:
+    name: Clifford Dalson III
+    email: cdalsoniii@gmail.com
+  license:
+    name: dasfsd
+    url: 'http://localhost:3000'
 servers:
   - url: 'http://localhost:3000'
+    description: Clifford Dalson III
 paths:
   '/users/{userId}':
     parameters:
