@@ -58,6 +58,10 @@ paths:
                     dateOfBirth: '1985-10-02'
                     emailVerified: false
                     createDate: '2019-08-24'
+            application/x-tex:
+              schema:
+                type: object
+                properties: {}
         '404':
           description: User Not Found
         '409':
